@@ -6,6 +6,12 @@ import '@testing-library/jest-dom/extend-expect';
 // export the component that is being tested
 import Nav from '..';
 
+const categories = [
+    { name: 'portraits', description: 'Portraits of people in my life' }
+]
+const mockCurrentCategory = jest.fn();
+const mockSetCurrentCategory = jest.fn();
+
 // call cleanup function using the afterEach global function from Jest
 afterEach(cleanup);
 

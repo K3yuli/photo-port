@@ -21,7 +21,7 @@ function App() {
     <div>
       <Nav></Nav>
       <main>
-        <Gallery></Gallery>
+        <Gallery currentCategory={currentCategory}></Gallery>
         <About>
         </About>
       </main>
@@ -29,4 +29,4 @@ function App() {
   );
 }
 
-export default App;
+export default App
