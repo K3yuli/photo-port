@@ -25,5 +25,5 @@ describe('About component', () => {
         // use expect function with a matcher to assert something about a value
         // the toMatchSnapshot matcher
         expect(asFragment()).toMatchSnapshot();
-    })
+    });
 })
