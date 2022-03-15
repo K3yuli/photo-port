@@ -48,6 +48,6 @@ describe('links are visible', () => {
         const { getByTestId } = render(<Nav />);
         // Assert
         expect(getByTestId('link')).toHaveTextContent('Oh Snap!');
-        expect(getByTestId('about')).toHaveTextContent('About Me');
+        expect(getByTestId('about')).toHaveTextContent('About me');
     });
 })
