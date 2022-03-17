@@ -1,9 +1,8 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { capitalizeFirstLetter } from "../../utils/helpers"; 
-import React, { useEffect } from 'react';
 
 function Nav (props) {
-    // useEffect hook to re-render when the value updates
+    // // useEffect hook to re-render when the value updates
     useEffect(() => {
         document.title = capitalizeFirstLetter(currentCategory.name);
     }, [currentCategory]);
@@ -28,7 +27,7 @@ function Nav (props) {
                         {/* add attribute specific to testing */}
                         <a data-testid="about" href="#about">About me</a>
                     </li>
-                    <li>
+                    <li className="mx-2">
                         <span>Contact</span>
                     </li>
 

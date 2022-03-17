@@ -1,8 +1,8 @@
-import React from "react";
+// import React from "react";
 // import useSate
-import React, { useSate } from 'react';
+import React, { useState } from 'react';
 
-import Modal from '../Modal';
+// import Modal from '../Modal';
 
 const PhotoList = ({ category }) => {
     // useState to set default values for the array of photos
@@ -109,7 +109,7 @@ const PhotoList = ({ category }) => {
     return(
         <div>
             <div className="flex-row">
-                {photos.map((image, i) => (
+                {currentPhotos.map((image, i) => (
                     <img
                     src={require(`../../assets/small/${category}/${i}.jpg`)}
                     alt={image.name}

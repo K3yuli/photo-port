@@ -6,6 +6,7 @@ import '@testing-library/jest-dom/extend-expect';
 // export the component that is being tested
 import Nav from '..';
 
+// declare the props
 const categories = [
     { name: 'portraits', description: 'Portraits of people in my life' }
 ]
@@ -20,8 +21,12 @@ describe('Nav component', () => {
     // renders Nav test
     // First test - baseline test
     it('renders', () => {
-        render(<Nav />)
-    });
+        render(<Nav 
+        categories={categories}
+        setCurrentCategory={mockCurrentCategory}
+        currentCategory={mockCurrentCategory}
+        />);
+    })
 
     // run test after writing first test
 
