@@ -14,6 +14,7 @@ const { name, email, message } = formState;
 
 
 function ContactForm() {
+    
     // declare handleChange function
     function handleChange(e) {
         setFormState({...formState, [e.target.name]: e.target.value })
