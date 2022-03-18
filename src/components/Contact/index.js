@@ -2,19 +2,19 @@
 import React, { useState } from "react";
 import { validateEmail } from "../../utils/helpers";
 
-// add hook to manage the form data
-const [formState, setFormState] = useState({
+
+function ContactForm() {
+    // add hook to manage the form data
+    const [formState, setFormState] = useState({
     // clear input fields on the component loading by setting initial state to empty strings
     name: '',
     email: '',
     message: ''
-});
+    });
+    const { name, email, message } = formState;
 
-const { name, email, message } = formState;
+    const [errorMessage, setErrorMessage] = useState('');
 
-const [errorMessage, setErrorMessage] = useState('');
-
-function ContactForm() {
     // declare handleChange function
     function handleChange(e) {
          // validate email
