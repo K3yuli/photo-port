@@ -3,9 +3,9 @@ import { capitalizeFirstLetter } from "../../utils/helpers";
 
 function Nav (props) {
     // // useEffect hook to re-render when the value updates
-    useEffect(() => {
-        document.title = capitalizeFirstLetter(currentCategory.name);
-    }, [currentCategory]);
+    // useEffect(() => {
+    //     document.title = capitalizeFirstLetter(currentCategory.name);
+    // }, [currentCategory]);
 
     const {
         categories = [],
